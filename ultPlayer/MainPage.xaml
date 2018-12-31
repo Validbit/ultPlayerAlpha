@@ -1,0 +1,485 @@
+﻿<Page
+    x:Class="ultPlayer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ultPlayer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x1="using:System"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" ScrollViewer.VerticalScrollBarVisibility="Disabled" MinHeight="300" MinWidth="1040">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ImageBrush x:Name="playIconBrush" ImageSource="/Assets/UI/Controls/play.png" Stretch="Uniform"/>
+            <Style x:Key="uPslider" TargetType="Slider">
+                <Setter Property="Background" Value="{ThemeResource SystemControlForegroundBaseMediumLowBrush}"/>
+                <Setter Property="BorderThickness" Value="{ThemeResource SliderBorderThemeThickness}"/>
+                <Setter Property="Foreground" Value="{ThemeResource SystemControlHighlightAccentBrush}"/>
+                <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+                <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+                <Setter Property="ManipulationMode" Value="None"/>
+                <Setter Property="UseSystemFocusVisuals" Value="True"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Slider">
+                            <Grid Margin="{TemplateBinding Padding}">
+                                <Grid.Resources>
+                                    <Style x:Key="SliderThumbStyle" TargetType="Thumb">
+                                        <Setter Property="BorderThickness" Value="0"/>
+                                        <Setter Property="Background" Value="{ThemeResource SystemControlForegroundAccentBrush}"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="Thumb">
+                                                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="4"/>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Grid.Resources>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="HorizontalThumb">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightChromeHighBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="VerticalThumb">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightChromeHighBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="HeaderContentPresenter">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="HorizontalDecreaseRect">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledChromeDisabledHighBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="HorizontalTrackRect">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledChromeDisabledHighBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="VerticalDecreaseRect">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledChromeDisabledHighBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="VerticalTrackRect">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledChromeDisabledHighBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="HorizontalThumb">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledChromeDisabledHighBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="VerticalThumb">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledChromeDisabledHighBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="TopTickBar">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="BottomTickBar">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="LeftTickBar">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="RightTickBar">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlDisabledBaseMediumLowBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="HorizontalTrackRect">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlForegroundBaseMediumBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="VerticalTrackRect">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlForegroundBaseMediumBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="HorizontalThumb">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightChromeAltLowBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="VerticalThumb">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource SystemControlHighlightChromeAltLowBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <ContentPresenter x:Name="HeaderContentPresenter" ContentTemplate="{TemplateBinding HeaderTemplate}" Content="{TemplateBinding Header}" Foreground="{ThemeResource SystemControlForegroundBaseHighBrush}" FontWeight="{ThemeResource SliderHeaderThemeFontWeight}" Margin="{ThemeResource SliderHeaderThemeMargin}" TextWrapping="Wrap" Visibility="Collapsed" x:DeferLoadStrategy="Lazy"/>
+                                <Grid x:Name="SliderContainer" Background="Transparent" Control.IsTemplateFocusTarget="True" Grid.Row="1">
+                                    <Grid x:Name="HorizontalTemplate" MinHeight="44">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="18"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="18"/>
+                                        </Grid.RowDefinitions>
+                                        <Rectangle x:Name="HorizontalTrackRect" Grid.ColumnSpan="3" Fill="{TemplateBinding Background}" Height="{ThemeResource SliderTrackThemeHeight}" Grid.Row="1"/>
+                                        <Rectangle x:Name="HorizontalDecreaseRect" Fill="{TemplateBinding Foreground}" Grid.Row="1"/>
+                                        <TickBar x:Name="TopTickBar" Grid.ColumnSpan="3" Fill="{ThemeResource SystemControlForegroundBaseMediumLowBrush}" Height="{ThemeResource SliderOutsideTickBarThemeHeight}" Margin="0,0,0,4" Visibility="Collapsed" VerticalAlignment="Bottom"/>
+                                        <TickBar x:Name="HorizontalInlineTickBar" Grid.ColumnSpan="3" Fill="{ThemeResource SystemControlBackgroundAltHighBrush}" Height="{ThemeResource SliderTrackThemeHeight}" Grid.Row="1" Visibility="Collapsed"/>
+                                        <TickBar x:Name="BottomTickBar" Grid.ColumnSpan="3" Fill="{ThemeResource SystemControlForegroundBaseMediumLowBrush}" Height="{ThemeResource SliderOutsideTickBarThemeHeight}" Margin="0,4,0,0" Grid.Row="2" Visibility="Collapsed" VerticalAlignment="Top"/>
+                                        <Thumb x:Name="HorizontalThumb" AutomationProperties.AccessibilityView="Raw" Background="{TemplateBinding Foreground}" Grid.Column="1" DataContext="{TemplateBinding Value}" Height="24" Grid.Row="0" Grid.RowSpan="3" Style="{StaticResource SliderThumbStyle}" Width="8"/>
+                                    </Grid>
+                                    <Grid x:Name="VerticalTemplate" MinWidth="44" Visibility="Collapsed">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="18"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="18"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Rectangle x:Name="VerticalTrackRect" Grid.Column="1" Fill="{TemplateBinding Background}" Grid.RowSpan="3" Width="{ThemeResource SliderTrackThemeHeight}"/>
+                                        <Rectangle x:Name="VerticalDecreaseRect" Grid.Column="1" Fill="{TemplateBinding Foreground}" Grid.Row="2"/>
+                                        <TickBar x:Name="LeftTickBar" Fill="{ThemeResource SystemControlForegroundBaseMediumLowBrush}" HorizontalAlignment="Right" Margin="0,0,4,0" Grid.RowSpan="3" Visibility="Collapsed" Width="{ThemeResource SliderOutsideTickBarThemeHeight}"/>
+                                        <TickBar x:Name="VerticalInlineTickBar" Grid.Column="1" Fill="{ThemeResource SystemControlBackgroundAltHighBrush}" Grid.RowSpan="3" Visibility="Collapsed" Width="{ThemeResource SliderTrackThemeHeight}"/>
+                                        <TickBar x:Name="RightTickBar" Grid.Column="2" Fill="{ThemeResource SystemControlForegroundBaseMediumLowBrush}" HorizontalAlignment="Left" Margin="4,0,0,0" Grid.RowSpan="3" Visibility="Collapsed" Width="{ThemeResource SliderOutsideTickBarThemeHeight}"/>
+                                        <Thumb x:Name="VerticalThumb" AutomationProperties.AccessibilityView="Raw" Background="{TemplateBinding Foreground}" Grid.ColumnSpan="3" Grid.Column="0" DataContext="{TemplateBinding Value}" Height="8" Grid.Row="1" Style="{StaticResource SliderThumbStyle}" Width="24"/>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="Button" x:Key="uPbutton">
+                <Setter Property="Background" Value="{ThemeResource SystemControlBackgroundBaseLowBrush}" />
+                <Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}"/>
+                <Setter Property="BorderBrush" Value="{ThemeResource SystemControlForegroundTransparentBrush}" />
+                <Setter Property="BorderThickness" Value="{ThemeResource ButtonBorderThemeThickness}" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+                <Setter Property="UseSystemFocusVisuals" Value="True" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Grid x:Name="RootGrid" 
+                          Background="{TemplateBinding Background}">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="PointerOver">
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <ContentPresenter x:Name="ContentPresenter"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Content="{TemplateBinding Content}"
+                            ContentTransitions="{TemplateBinding ContentTransitions}"
+                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                            Padding="{TemplateBinding Padding}"
+                            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                            AutomationProperties.AccessibilityView="Raw"/>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid x:Name="grid_main" UseLayoutRounding="True">
+        <Image x:Name="img_thumb_bg" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Source="/Assets/UI/emptyThumbBG.png" Stretch="UniformToFill">
+        </Image>
+        <Rectangle x:Name="rect_bg_overay">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="-115.346"/>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#33191919" Offset="0.372"/>
+                    <GradientStop Color="#333E3E3E" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+
+        </Rectangle>
+        <Grid x:Name="grid_playback" Margin="0,0,320,84" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16">
+                <Border Width="128" MaxWidth="256" Height="128" MaxHeight="256" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" BorderThickness="0,0,4,4">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.RelativeTransform>
+                                <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="-24.228"/>
+                            </LinearGradientBrush.RelativeTransform>
+                            <GradientStop Color="#00A4A4A4" Offset="0.35"/>
+                            <GradientStop Color="#B2FFA437" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Image x:Name="img_thumb" HorizontalAlignment="Left"  FocusVisualSecondaryBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" Source="/Assets/UI/emptyThumb.png" />
+                </Border>
+                <StackPanel Margin="24,24" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <TextBlock x:Name="lbl_song" HorizontalAlignment="Left" Text="Song Name" FontSize="40"  FontFamily="Impact"/>
+                    <TextBlock x:Name="lbl_author" HorizontalAlignment="Left" Text="Author" FontSize="26" FontFamily="Impact" Foreground="#FFD4D4D4"/>
+                </StackPanel>
+            </StackPanel>
+            <TextBlock x:Name="lbl_playbackState" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="72" FontWeight="Bold" FontFamily="Impact" CharacterSpacing="180" FocusVisualPrimaryBrush="{x:Null}" Margin="0,10,0,0" Visibility="Collapsed" >
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <LinearGradientBrush.RelativeTransform>
+                            <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="208.009"/>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#FF171717" Offset="0"/>
+                        <GradientStop Color="#FF595959" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground><Run Text="NOW "/><Run Text="RESTING"/><LineBreak/><Run/>
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Spacing="12" VerticalAlignment="Bottom" Margin="30,0,0,20">
+                <Button x:Name="btn_play" Style="{StaticResource uPbutton}" Content="" Click="Button_Click" Width="72" Height="72" PointerEntered="Btn_play_PointerEntered" PointerExited="Btn_play_PointerExited">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Control/play.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_prev" Style="{StaticResource uPbutton}" Content="" Height="38" Width="38" HorizontalAlignment="Left" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Btn_prev_Click" PointerExited="Btn_prev_PointerExited" PointerEntered="Btn_prev_PointerEntered" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/UI/Control/prev.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_seek_back" Style="{StaticResource uPbutton}" Content="" Height="38" Width="38" HorizontalAlignment="Left" Click="Btn_seek_back_Click" PointerEntered="Btn_seek_back_PointerEntered" PointerExited="Btn_seek_back_PointerExited" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/UI/Control/seek_back.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_stop" Style="{StaticResource uPbutton}" Content="" Click="Button_Click_1" Height="38" Width="38" HorizontalAlignment="Left" PointerEntered="Btn_stop_PointerEntered" PointerExited="Btn_stop_PointerExited" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/UI/Control/stop.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_seek_fwd" Style="{StaticResource uPbutton}" Content="" Height="38" Width="38" HorizontalAlignment="Left" Click="Btn_seek_fwd_Click" PointerEntered="Btn_seek_fwd_PointerEntered" PointerExited="Btn_seek_fwd_PointerExited" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/UI/Control/seek_fwd.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_next" Style="{StaticResource uPbutton}" Content="" Height="38" Width="38" HorizontalAlignment="Left" Click="Btn_next_Click" PointerEntered="Btn_next_PointerEntered" PointerExited="Btn_next_PointerExited" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/UI/Control/next.png"/>
+                    </Button.Background>
+                </Button>
+                <Slider x:Name="slider_playbackSpeed" Style="{StaticResource uPslider}" VerticalAlignment="Center" Width="160" Margin="8,0" Foreground="#FFCE7F14" ValueChanged="Slider_playbackSpeed_ValueChanged" FontFamily="Arial Black" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}"/>
+                <TextBlock x:Name="lbl_playbackSpeed" Text="1.00x" FontSize="22" VerticalAlignment="Center" FontFamily="Arial Black" FontWeight="Bold" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" SelectionHighlightColor="Black" Foreground="#FFCC8412" PointerPressed="Lbl_playbackSpeed_PointerPressed"></TextBlock>
+            </StackPanel>
+            <StackPanel x:Name="sp_playback_controls_tr" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="12" VerticalAlignment="Top" Margin="0,37,30,0">
+                <Button x:Name="btn_close_tab_browser" Style="{StaticResource uPbutton}" Content="" Height="38" Width="38" HorizontalAlignment="Left" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Btn_close_tab_browser_Click" PointerEntered="Btn_close_tab_browser_PointerEntered" PointerExited="Btn_close_tab_browser_PointerExited" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/UI/Bars/browser.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <StackPanel x:Name="sp_playback_controls_br" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="12" VerticalAlignment="Bottom" Margin="0,0,30,37">
+                <Button x:Name="btn_close_tab_features" Style="{StaticResource uPbutton}" Content="" Height="38" Width="38" HorizontalAlignment="Left" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" PointerEntered="Btn_close_tab_features_PointerEntered" PointerExited="Btn_close_tab_features_PointerExited" Click="Btn_close_tab_features_Click" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/UI/Bars/features.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" BorderBrush="#FFC88B0D" Padding="8,2" BorderThickness="2,0,2,0" Background="#66000000" Visibility="Collapsed" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}">
+                    <TextBlock x:Name="lbl_debug_target" Text="DEBUG" FontSize="9" Foreground="#FFC1C1C1" VerticalAlignment="Center" Margin="6,0,6,0" FocusVisualPrimaryBrush="{x:Null}"/>
+                    <Button x:Name="btn_debug_target_toggle"  Content="D"  FontSize="10" Background="{x:Null}" Foreground="#FFC88B0D"  Click="btn_srcSelect_Click"  BorderBrush="{x:Null}" Padding="0,0,0,0" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" BorderBrush="#FFC88B0D" Padding="8,2" BorderThickness="2,0,2,0" Background="#66000000" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}">
+                    <TextBlock x:Name="lbl_src" Text="SOURCE" FontSize="9" Foreground="#FFC1C1C1" VerticalAlignment="Center" Margin="6,0,6,0" FocusVisualPrimaryBrush="{x:Null}"/>
+                    <Button x:Name="btn_src_select"  Content="♫"  FontSize="10" Background="{x:Null}" Foreground="#FFC88B0D"  Click="btn_srcSelect_Click"  BorderBrush="{x:Null}" Padding="0,0,0,0" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}"/>
+                </StackPanel>
+                
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="grid_tab_features" Visibility="Visible" VerticalAlignment="Bottom" Margin="0,0,320,0">
+            <Rectangle VerticalAlignment="Bottom" Margin="0,0,0,0" Height="79">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFD69333" Offset="0"/>
+                        <GradientStop Color="#27BD8000" Offset="0.1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <StackPanel Orientation="Horizontal" Spacing="56" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Style="{StaticResource uPbutton}" Width="32" Height="26">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/Features/fav.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource uPbutton}"/>
+                <Button Style="{StaticResource uPbutton}"/>
+                <Button Style="{StaticResource uPbutton}"  Width="32" Height="26">
+                    <Button.Background>
+                        <ImageBrush  Stretch="Uniform" ImageSource="/Assets/UI/Bars/Features/label.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Style="{StaticResource uPbutton}"/>
+                <Button Style="{StaticResource uPbutton}"/>
+                <Button Style="{StaticResource uPbutton}"  Width="32" Height="26">
+                    <Button.Background>
+                        <ImageBrush  Stretch="Uniform" ImageSource="/Assets/UI/Bars/Features/lock_layout.png"/>
+                    </Button.Background>
+                </Button>
+                <Image Height="26" Source="/Assets/UI/Bars/divider.png" VerticalAlignment="Bottom"/>
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="grid_tab_browser" HorizontalAlignment="Right" Width="320" VerticalAlignment="Stretch">
+            <!-- <Rectangle HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/Assets/UI/Bars/browser_bg.png"/>
+                </Rectangle.Fill>
+            </Rectangle> -->
+            <Canvas Margin="0">
+                <Canvas.Resources>
+                    <LinearGradientBrush xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Key="linearGradient4496" MappingMode="Absolute" StartPoint="19,121" EndPoint="85,106">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStopCollection>
+                                <GradientStop Color="#FFC88B0D" Offset="0"/>
+                                <GradientStop Color="#FCD47418" Offset="1"/>
+                            </GradientStopCollection>
+                        </LinearGradientBrush.GradientStops>
+                        <LinearGradientBrush.Transform>
+                            <TranslateTransform X="0" Y="2.476e-5"/>
+                        </LinearGradientBrush.Transform>
+                    </LinearGradientBrush>
+                    <LinearGradientBrush xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Key="linearGradient4494" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStopCollection>
+                                <GradientStop Color="#FFC88B0D" Offset="0"/>
+                                <GradientStop Color="#FCD47418" Offset="1"/>
+                            </GradientStopCollection>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Canvas.Resources>
+                <Path Name="rect4485" Fill="{StaticResource linearGradient4494}" StrokeThickness="0.565" StrokeMiterLimit="4" Opacity="1" Data="M 0 156 320 0 V 1080 H 0 Z">
+                </Path>
+            </Canvas>
+            <!-- Tab BG -->
+            <Image Width="88" Height="88" VerticalAlignment="Top" HorizontalAlignment="Right" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Source="/Assets/UI/Bars/music_a.png" Margin="0,92,36,0"/>
+            <StackPanel x:Name="sp_browser" MinHeight="60" Margin="36,233,36,224" HorizontalAlignment="Stretch">
+                <ListBox x:Name="lb_browser" Background="{x:Null}" FontFamily="Arial Black" Visibility="Collapsed">
+                    <ListBoxItem Background="{x:Null}" HorizontalAlignment="Center" Content="Select a file" FocusVisualSecondaryBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" Foreground="#FF252526" FontSize="20" />
+                </ListBox>
+            </StackPanel>
+            <StackPanel Margin="56,0,56,29"  Spacing="18" Orientation="Vertical" VerticalAlignment="Bottom" Height="175">
+                <!--<TextBlock Text="MUSIC" FontSize="32" VerticalAlignment="Bottom" SelectionHighlightColor="Black" FocusVisualSecondaryBrush="#99000000" HorizontalAlignment="Center">
+                    <TextBlock.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <LinearGradientBrush.RelativeTransform>
+                                <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="-14.036"/>
+                            </LinearGradientBrush.RelativeTransform>
+                            <GradientStop Color="#FFD36F0A"/>
+                            <GradientStop Color="#FF5D4520" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TextBlock.Foreground>
+                </TextBlock>-->
+                <Grid x:Name="grid_tab_browser_label" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Rectangle Fill="#FF2D2D2D" Canvas.ZIndex="-10" StrokeDashCap="Flat" RadiusX="15" RadiusY="15" ></Rectangle>
+                    <StackPanel Orientation="Horizontal" MinHeight="24" MaxHeight="24" Spacing="12" Margin="16,6">
+                        <Button x:Name="btn_promptFile" Style="{StaticResource uPbutton}" Width="14" Height="12" Click="Btn_promptFile_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Assets/UI/Bars/folder.png"/>
+                            </Button.Background>
+                        </Button>
+                        <Image Margin="0,4" MinWidth="2" Stretch="Uniform" Source="/Assets/UI/Bars/divider.png"/>
+                        <TextBlock Text="BROWSE" FontSize="12" VerticalAlignment="Stretch" SelectionHighlightColor="Black" FocusVisualSecondaryBrush="#99000000" Margin="0,4">
+                            <TextBlock.Foreground>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <LinearGradientBrush.RelativeTransform>
+                                        <CompositeTransform CenterY="0.5" CenterX="0.5" Rotation="322.125"/>
+                                    </LinearGradientBrush.RelativeTransform>
+                                    <GradientStop Color="#FFC88B0D"/>
+                                    <GradientStop Color="#FFD17916" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Foreground>
+                        </TextBlock>
+                    </StackPanel>
+                </Grid>
+                <StackPanel x:Name="sp_subcategory" HorizontalAlignment="Center" MinHeight="50" Orientation="Horizontal" Spacing="16">
+                    <Button x:Name="btn_music_tracks" Style="{StaticResource uPbutton}" Content="" Height="64" Width="64" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" PointerEntered="Btn_music_tracks_PointerEntered" PointerExited="Btn_music_tracks_PointerExited">
+                        <Button.Background>
+                            <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/tracks.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btn_music_artists" Style="{StaticResource uPbutton}" Content="" Height="48" Width="48" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}" BorderBrush="{x:Null}" PointerEntered="Btn_music_artists_PointerEntered" PointerExited="Btn_music_artists_PointerExited">
+                        <Button.Background>
+                            <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/artists.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btn_music_albums" Style="{StaticResource uPbutton}" Content="ALB" Height="48" Width="64" Foreground="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" BorderBrush="{x:Null}" PointerExited="Btn_music_albums_PointerExited" PointerEntered="Btn_music_albums_PointerEntered">
+                        <Button.Background>
+                            <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/albums.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+                <StackPanel x:Name="sp_option" HorizontalAlignment="Center" MinHeight="30" Orientation="Horizontal" Spacing="16">
+                    <Button x:Name="btn_repeat" Style="{StaticResource uPbutton}" Content="R" Height="26" Width="26" BorderBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}">
+                        <Button.Background>
+                            <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Control/repeat_none.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btn_shuff" Style="{StaticResource uPbutton}" Content="S" Height="26" Width="26" BorderBrush="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Foreground="{x:Null}">
+                        <Button.Background>
+                            <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Control/shuffle_none.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <!-- Browser tab-->
+        <Grid x:Name="grid_browser_category" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,45,0,0" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Grid.RenderTransform>
+                <CompositeTransform Rotation="-25.463"/>
+            </Grid.RenderTransform>
+            <StackPanel x:Name="sp_browser_category" HorizontalAlignment="Left" Orientation="Horizontal" Spacing="12" UseLayoutRounding="False" VerticalAlignment="Top" d:LayoutRounding="Auto" Margin="-313,-75,0,0">
+                <Button x:Name="btn_close_tab_browser_2" Style="{StaticResource uPbutton}" Content="" VerticalAlignment="Bottom" FontSize="16"  BorderThickness="6,0,0,0" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" Click="Btn_close_tab_browser_Click" PointerEntered="Btn_close_tab_browser_2_PointerEntered" PointerExited="Btn_close_tab_browser_2_PointerExited">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/browser.png"/>
+                    </Button.Background>
+                </Button>
+                <Image Height="26" Source="/Assets/UI/Bars/divider.png" VerticalAlignment="Bottom"/>
+                <Button x:Name="btn_browser_music" Style="{StaticResource uPbutton}" Content="" VerticalAlignment="Bottom" FontSize="16"  BorderThickness="6,0,0,0" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/music_active.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_browser_midi" Style="{StaticResource uPbutton}" Content="" VerticalAlignment="Bottom" FontSize="16" BorderThickness="0,0,6,0" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" PointerEntered="Btn_browser_midi_PointerEntered" PointerExited="Btn_browser_midi_PointerExited" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Assets/UI/Bars/midi.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_browser_book" Style="{StaticResource uPbutton}" Content="" VerticalAlignment="Bottom" FontSize="16"  BorderThickness="6,0,0,0" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" PointerEntered="Btn_browser_book_PointerEntered" PointerExited="Btn_browser_book_PointerExited">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/book.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_browser_playlist" Style="{StaticResource uPbutton}" Content="" VerticalAlignment="Bottom" FontSize="16"  BorderThickness="6,0,0,0" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" PointerEntered="Btn_browser_playlist_PointerEntered" PointerExited="Btn_browser_playlist_PointerExited">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/playlist.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btn_browser_settings" Style="{StaticResource uPbutton}" Content="" VerticalAlignment="Bottom" FontSize="16"  BorderThickness="6,0,0,0" Width="24" Height="24" BorderBrush="{x:Null}" Foreground="{x:Null}" FocusVisualPrimaryBrush="{x:Null}" FocusVisualSecondaryBrush="{x:Null}" PointerExited="Btn_browser_settings_PointerExited" PointerEntered="Btn_browser_settings_PointerEntered">
+                    <Button.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="/Assets/UI/Bars/settings.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <!-- Tab categories -->
+    </Grid>
+</Page>

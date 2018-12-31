@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-KLUJL56</Machine>
+    <WindowsUser>ValidUsr</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>c46fd82b-8245-4a21-b15a-642f56cfe185</PackageIdentityName>
+    <PackageIdentityPublisher>CN=ValidUser</PackageIdentityPublisher>
+    <IntermediateOutputPath>E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\obj\x86\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\albums.png">
+      <PackagePath>Assets\UI\Bars\albums.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\albums_h.png">
+      <PackagePath>Assets\UI\Bars\albums_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\artists.png">
+      <PackagePath>Assets\UI\Bars\artists.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\artists_h.png">
+      <PackagePath>Assets\UI\Bars\artists_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\book.png">
+      <PackagePath>Assets\UI\Bars\book.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\book_h.png">
+      <PackagePath>Assets\UI\Bars\book_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\browser.png">
+      <PackagePath>Assets\UI\Bars\browser.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\browser_bg.png">
+      <PackagePath>Assets\UI\Bars\browser_bg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\browser_h.png">
+      <PackagePath>Assets\UI\Bars\browser_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\close_tab.png">
+      <PackagePath>Assets\UI\Bars\close_tab.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\close_tab_h.png">
+      <PackagePath>Assets\UI\Bars\close_tab_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\divider.png">
+      <PackagePath>Assets\UI\Bars\divider.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\features.png">
+      <PackagePath>Assets\UI\Bars\features.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\Features\fav.png">
+      <PackagePath>Assets\UI\Bars\Features\fav.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\Features\label.png">
+      <PackagePath>Assets\UI\Bars\Features\label.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\Features\lock_layout.png">
+      <PackagePath>Assets\UI\Bars\Features\lock_layout.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\features_h.png">
+      <PackagePath>Assets\UI\Bars\features_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\folder.png">
+      <PackagePath>Assets\UI\Bars\folder.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\folder_h.png">
+      <PackagePath>Assets\UI\Bars\folder_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\midi.png">
+      <PackagePath>Assets\UI\Bars\midi.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\midi_h.png">
+      <PackagePath>Assets\UI\Bars\midi_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\music_a.png">
+      <PackagePath>Assets\UI\Bars\music_a.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\music_active.png">
+      <PackagePath>Assets\UI\Bars\music_active.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\playlist.png">
+      <PackagePath>Assets\UI\Bars\playlist.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\playlist_h.png">
+      <PackagePath>Assets\UI\Bars\playlist_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\settings.png">
+      <PackagePath>Assets\UI\Bars\settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\settings_h.png">
+      <PackagePath>Assets\UI\Bars\settings_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\tracks.png">
+      <PackagePath>Assets\UI\Bars\tracks.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Bars\tracks_h.png">
+      <PackagePath>Assets\UI\Bars\tracks_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\left.png">
+      <PackagePath>Assets\UI\Control\left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\loading.png">
+      <PackagePath>Assets\UI\Control\loading.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\loading_h.png">
+      <PackagePath>Assets\UI\Control\loading_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\next.png">
+      <PackagePath>Assets\UI\Control\next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\next_h.png">
+      <PackagePath>Assets\UI\Control\next_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\pause.png">
+      <PackagePath>Assets\UI\Control\pause.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\pause_h.png">
+      <PackagePath>Assets\UI\Control\pause_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\play.png">
+      <PackagePath>Assets\UI\Control\play.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\play_h.png">
+      <PackagePath>Assets\UI\Control\play_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\prev.png">
+      <PackagePath>Assets\UI\Control\prev.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\prev_h.png">
+      <PackagePath>Assets\UI\Control\prev_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\repeat_all.png">
+      <PackagePath>Assets\UI\Control\repeat_all.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\repeat_none.png">
+      <PackagePath>Assets\UI\Control\repeat_none.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\repeat_single.png">
+      <PackagePath>Assets\UI\Control\repeat_single.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\right.png">
+      <PackagePath>Assets\UI\Control\right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\seek_back.png">
+      <PackagePath>Assets\UI\Control\seek_back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\seek_back_h.png">
+      <PackagePath>Assets\UI\Control\seek_back_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\seek_fwd.png">
+      <PackagePath>Assets\UI\Control\seek_fwd.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\seek_fwd_h.png">
+      <PackagePath>Assets\UI\Control\seek_fwd_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\shuffle_classic.png">
+      <PackagePath>Assets\UI\Control\shuffle_classic.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\shuffle_none.png">
+      <PackagePath>Assets\UI\Control\shuffle_none.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\stop.png">
+      <PackagePath>Assets\UI\Control\stop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\Control\stop_h.png">
+      <PackagePath>Assets\UI\Control\stop_h.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\emptyThumb.png">
+      <PackagePath>Assets\UI\emptyThumb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\emptyThumbBG.png">
+      <PackagePath>Assets\UI\emptyThumbBG.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\UI\pic_error.png">
+      <PackagePath>Assets\UI\pic_error.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\ultPlayer.dll">
+      <PackagePath>ultPlayer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\ultPlayer.exe">
+      <PackagePath>ultPlayer.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Release\ilc\ultPlayer.pdb">
+      <PackagePath>ultPlayer.pdb</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.27011.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.27011.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.27011.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.27011.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.27011.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.27011.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.27011.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.27011.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.1\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.27011.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.27011.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.1\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.1\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.27011.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.27011.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.native.compiler\2.2.1\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.1\build\..\tools\Runtime\arm64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.27011.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.27011.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.1\build\..\tools\Runtime\arm64\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.compiler\2.2.1\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.27011.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.27011.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.compiler\2.2.1\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.26706.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.26706.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.26706.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.26706.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.26706.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.26706.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.26706.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.26706.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

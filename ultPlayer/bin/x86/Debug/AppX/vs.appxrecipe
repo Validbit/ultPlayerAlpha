@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-KLUJL56</Machine>
+    <WindowsUser>ValidUsr</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>c46fd82b-8245-4a21-b15a-642f56cfe185</PackageIdentityName>
+    <PackageIdentityPublisher>CN=ValidUser</PackageIdentityPublisher>
+    <IntermediateOutputPath>E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>2AAEA63457D0D1E51B4F6167C05E23368EBD2694D505CF7DAC6A4C0F87DE33D2</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>c46fd82b-8245-4a21-b15a-642f56cfe185_0.1.4.0_x86__qtbkhgy467dbp</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>c46fd82b-8245-4a21-b15a-642f56cfe185_qtbkhgy467dbp!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>c46fd82b-8245-4a21-b15a-642f56cfe185</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=ValidUser</RegisteredPackagePublisher>
+    <RegisteredVersion>0.1.4.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-31T09:13:50.813</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Debug\ultPlayer.exe">
+      <PackagePath>entrypoint\ultPlayer.exe</PackagePath>
+      <Modified>2018-12-31T09:13:50.246</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.3\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2018-11-29T09:27:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ValidUsr\.nuget\packages\win2d.uwp\1.23.0\runtimes\win10-x86\native\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+      <Modified>2018-05-17T18:15:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ValidUsr\.nuget\packages\win2d.uwp\1.23.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+      <Modified>2018-05-17T18:15:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+      <Modified>2018-10-23T00:33:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.116</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.203</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.734</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.040</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.080</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.145</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.183</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.238</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.518</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.644</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:28.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.328</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.185</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.259</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.295</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.818</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.993</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.031</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.152</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.068</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.102</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:28.466</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:28.501</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:28.545</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:28.588</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:28.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\albums.png">
+      <PackagePath>Assets\UI\Bars\albums.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\albums_h.png">
+      <PackagePath>Assets\UI\Bars\albums_h.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.424</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\artists.png">
+      <PackagePath>Assets\UI\Bars\artists.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.278</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\artists_h.png">
+      <PackagePath>Assets\UI\Bars\artists_h.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\book.png">
+      <PackagePath>Assets\UI\Bars\book.png</PackagePath>
+      <Modified>2018-12-28T15:47:42.075</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\book_h.png">
+      <PackagePath>Assets\UI\Bars\book_h.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.359</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\browser.png">
+      <PackagePath>Assets\UI\Bars\browser.png</PackagePath>
+      <Modified>2018-12-29T17:51:05.868</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\browser_h.png">
+      <PackagePath>Assets\UI\Bars\browser_h.png</PackagePath>
+      <Modified>2018-12-29T17:51:05.792</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\close_tab.png">
+      <PackagePath>Assets\UI\Bars\close_tab.png</PackagePath>
+      <Modified>2018-12-28T17:19:38.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\close_tab_h.png">
+      <PackagePath>Assets\UI\Bars\close_tab_h.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.387</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\divider.png">
+      <PackagePath>Assets\UI\Bars\divider.png</PackagePath>
+      <Modified>2018-12-28T17:01:47.735</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\features.png">
+      <PackagePath>Assets\UI\Bars\features.png</PackagePath>
+      <Modified>2018-12-29T17:51:05.691</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\features_h.png">
+      <PackagePath>Assets\UI\Bars\features_h.png</PackagePath>
+      <Modified>2018-12-29T17:51:05.702</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\folder.png">
+      <PackagePath>Assets\UI\Bars\folder.png</PackagePath>
+      <Modified>2018-12-29T21:36:24.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\folder_h.png">
+      <PackagePath>Assets\UI\Bars\folder_h.png</PackagePath>
+      <Modified>2018-12-29T21:36:24.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\midi.png">
+      <PackagePath>Assets\UI\Bars\midi.png</PackagePath>
+      <Modified>2018-12-28T15:47:42.085</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\midi_h.png">
+      <PackagePath>Assets\UI\Bars\midi_h.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\music_a.png">
+      <PackagePath>Assets\UI\Bars\music_a.png</PackagePath>
+      <Modified>2018-12-28T16:06:44.984</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\music_active.png">
+      <PackagePath>Assets\UI\Bars\music_active.png</PackagePath>
+      <Modified>2018-12-28T17:06:58.276</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\playlist.png">
+      <PackagePath>Assets\UI\Bars\playlist.png</PackagePath>
+      <Modified>2018-12-29T12:54:07.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\playlist_h.png">
+      <PackagePath>Assets\UI\Bars\playlist_h.png</PackagePath>
+      <Modified>2018-12-29T12:54:07.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\loading_h.png">
+      <PackagePath>Assets\UI\Control\loading_h.png</PackagePath>
+      <Modified>2018-12-29T17:50:53.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\next_h.png">
+      <PackagePath>Assets\UI\Control\next_h.png</PackagePath>
+      <Modified>2018-12-29T17:50:53.370</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\pause_h.png">
+      <PackagePath>Assets\UI\Control\pause_h.png</PackagePath>
+      <Modified>2018-12-29T17:50:53.418</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\play_h.png">
+      <PackagePath>Assets\UI\Control\play_h.png</PackagePath>
+      <Modified>2018-12-29T17:50:53.032</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\prev_h.png">
+      <PackagePath>Assets\UI\Control\prev_h.png</PackagePath>
+      <Modified>2018-12-29T17:50:53.378</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\repeat_all.png">
+      <PackagePath>Assets\UI\Control\repeat_all.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.328</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\repeat_none.png">
+      <PackagePath>Assets\UI\Control\repeat_none.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.305</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\repeat_single.png">
+      <PackagePath>Assets\UI\Control\repeat_single.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.318</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\settings.png">
+      <PackagePath>Assets\UI\Bars\settings.png</PackagePath>
+      <Modified>2018-12-28T17:13:20.500</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\settings_h.png">
+      <PackagePath>Assets\UI\Bars\settings_h.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.347</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\seek_back_h.png">
+      <PackagePath>Assets\UI\Control\seek_back_h.png</PackagePath>
+      <Modified>2018-12-29T17:50:53.361</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\seek_fwd_h.png">
+      <PackagePath>Assets\UI\Control\seek_fwd_h.png</PackagePath>
+      <Modified>2018-12-29T17:50:53.320</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\shuffle_classic.png">
+      <PackagePath>Assets\UI\Control\shuffle_classic.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.295</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\shuffle_none.png">
+      <PackagePath>Assets\UI\Control\shuffle_none.png</PackagePath>
+      <Modified>2018-12-29T12:47:51.286</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\tracks.png">
+      <PackagePath>Assets\UI\Bars\tracks.png</PackagePath>
+      <Modified>2018-12-29T13:01:36.318</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\tracks_h.png">
+      <PackagePath>Assets\UI\Bars\tracks_h.png</PackagePath>
+      <Modified>2018-12-29T13:01:36.332</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Bars\browser_bg.png">
+      <PackagePath>Assets\UI\Bars\browser_bg.png</PackagePath>
+      <Modified>2018-12-26T19:42:42.403</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\left.png">
+      <PackagePath>Assets\UI\Control\left.png</PackagePath>
+      <Modified>2018-12-27T11:30:35.422</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\loading.png">
+      <PackagePath>Assets\UI\Control\loading.png</PackagePath>
+      <Modified>2018-12-28T17:53:00.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\next.png">
+      <PackagePath>Assets\UI\Control\next.png</PackagePath>
+      <Modified>2018-12-28T17:35:50.292</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\pause.png">
+      <PackagePath>Assets\UI\Control\pause.png</PackagePath>
+      <Modified>2018-12-28T17:35:53.466</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\prev.png">
+      <PackagePath>Assets\UI\Control\prev.png</PackagePath>
+      <Modified>2018-12-28T17:35:53.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\seek_back.png">
+      <PackagePath>Assets\UI\Control\seek_back.png</PackagePath>
+      <Modified>2018-12-28T17:35:53.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\seek_fwd.png">
+      <PackagePath>Assets\UI\Control\seek_fwd.png</PackagePath>
+      <Modified>2018-12-28T17:35:50.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\stop_h.png">
+      <PackagePath>Assets\UI\Control\stop_h.png</PackagePath>
+      <Modified>2018-12-29T17:50:53.043</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\emptyThumb.png">
+      <PackagePath>Assets\UI\emptyThumb.png</PackagePath>
+      <Modified>2018-12-30T10:39:52.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\emptyThumbBG.png">
+      <PackagePath>Assets\UI\emptyThumbBG.png</PackagePath>
+      <Modified>2018-12-30T11:21:10.254</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\pic_error.png">
+      <PackagePath>Assets\UI\pic_error.png</PackagePath>
+      <Modified>2018-12-26T09:58:51.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\play.png">
+      <PackagePath>Assets\UI\Control\play.png</PackagePath>
+      <Modified>2018-12-28T15:04:45.518</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\right.png">
+      <PackagePath>Assets\UI\Control\right.png</PackagePath>
+      <Modified>2018-12-27T11:30:35.410</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\UI\Control\stop.png">
+      <PackagePath>Assets\UI\Control\stop.png</PackagePath>
+      <Modified>2018-12-28T15:04:46.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.658</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.721</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.983</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2018-12-19T18:13:00.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.832</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:26.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:27.225</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-12-28T19:49:25.792</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2018-12-26T07:52:07.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Debug\ultPlayer.xr.xml">
+      <PackagePath>ultPlayer.xr.xml</PackagePath>
+      <Modified>2018-12-30T17:08:32.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2018-12-31T09:13:50.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2018-12-31T09:13:50.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2018-10-22T23:44:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2018-12-31T09:08:47.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\2_CCZe\Projects\ultPlayer\ultPlayer\ultPlayer\bin\x86\Debug\Core\ultPlayer.exe">
+      <PackagePath>ultPlayer.exe</PackagePath>
+      <Modified>2018-12-31T09:13:50.807</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.26926.4</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.26926.4, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.26926.4</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.26926.4, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.26926.4</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.26926.4, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27129.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27129.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27129.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27129.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27129.1</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27129.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.3\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27023.1</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27023.1</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27023.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27023.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27023.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

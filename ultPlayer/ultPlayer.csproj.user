@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>E:\2_CCZe\Projects\ultPlayer\Ink\ultPlayer_wc.png</Source>
+    <SmallTileSource>E:\2_CCZe\Projects\ultPlayer\Ink\ultPlayer_wc.png</SmallTileSource>
+    <MediumTileSource>E:\2_CCZe\Projects\ultPlayer\Ink\ultPlayer_wc.png</MediumTileSource>
+    <WideTileSource>E:\2_CCZe\Projects\ultPlayer\Ink\ultPlayer_wc.png</WideTileSource>
+    <LargeTileSource>E:\2_CCZe\Projects\ultPlayer\Ink\ultPlayer_wc.png</LargeTileSource>
+    <AppIconSource>E:\2_CCZe\Projects\ultPlayer\Ink\ultPlayer_wc.png</AppIconSource>
+    <SplashScreenSource>E:\2_CCZe\Projects\ultPlayer\Ink\ultPlayer_wc.png</SplashScreenSource>
+    <PackageLogoSource>E:\2_CCZe\Projects\ultPlayer\Ink\ultPlayer_wc.png</PackageLogoSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+</Project>
