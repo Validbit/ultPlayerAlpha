@@ -4,7 +4,7 @@ Zde se nachází zdrojový kód pro experimentální hudební přehrávač ultPl
 *Zatím však není určen pro veřejné přispívání*
 (Pokud by vás projekt zaujal, kontaktujte mě na email uvedený na GitHubu. Rád odpovím na vaše otázky)
 
-Pro zajištění správné funkconality
+Pro zajištění správného chodu:
 - Nastavte konfiguraci pro Build na **Release x86** 
 - Po úspěšném zakončení Build fáze spusťte program **z nabídky Start**
 
